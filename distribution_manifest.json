@@ -1,0 +1,113 @@
+{
+  "created_date": "2025-07-02T10:25:44.142183",
+  "files": [
+    {
+      "path": "build_exe.bat",
+      "size": 3849,
+      "hash": "049f7027d475a09bc15d314082b96ecd",
+      "modified": "2025-07-02T10:10:36.224041"
+    },
+    {
+      "path": "build_exe.py",
+      "size": 7106,
+      "hash": "6b13d34750d1851a32d218479e002912",
+      "modified": "2025-07-02T10:10:17.258025"
+    },
+    {
+      "path": "install.bat",
+      "size": 2765,
+      "hash": "cbba4113c9b5052a8f85c45a5fde3884",
+      "modified": "2025-07-02T10:25:43.941184"
+    },
+    {
+      "path": "install_dependencies.bat",
+      "size": 2927,
+      "hash": "5533b8eb1332606ff292502efcd57689",
+      "modified": "2025-07-02T10:19:25.861542"
+    },
+    {
+      "path": "install_dependencies.py",
+      "size": 5225,
+      "hash": "eff00f2a06814854bbbdf3fd6173b7d1",
+      "modified": "2025-07-02T10:19:26.728710"
+    },
+    {
+      "path": "packdata.json",
+      "size": 8065,
+      "hash": "c75a3285ac4c8a1ea9490a4cf98c9300",
+      "modified": "2025-07-02T09:54:33.925030"
+    },
+    {
+      "path": "pack_generator.py",
+      "size": 25502,
+      "hash": "309eece7b861622a00dfa8d343d61e39",
+      "modified": "2025-07-02T10:11:05.401818"
+    },
+    {
+      "path": "quick_start.bat",
+      "size": 3307,
+      "hash": "f5fd8ecb4c6db59728baf2b7733cf4f2",
+      "modified": "2025-07-02T10:19:23.953777"
+    },
+    {
+      "path": "README.txt",
+      "size": 1724,
+      "hash": "369c02737ca03209830d573fd10d4418",
+      "modified": "2025-07-02T10:25:43.941184"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 654,
+      "hash": "30857fe13435d0029e7156706ae4d107",
+      "modified": "2025-07-02T10:19:24.976685"
+    },
+    {
+      "path": "setup.py",
+      "size": 2605,
+      "hash": "111c8e3396f075c0befa9ffb84f0c2e6",
+      "modified": "2025-07-02T10:19:30.408642"
+    },
+    {
+      "path": "docs\\INSTALL_GUIDE.txt",
+      "size": 948,
+      "hash": "4e1eee651c52c312104a2d69fb153459",
+      "modified": "2025-07-02T10:25:43.940185"
+    },
+    {
+      "path": "docs\\USAGE_GUIDE.txt",
+      "size": 909,
+      "hash": "fc427681f1d8c94d742066d95868ed6e",
+      "modified": "2025-07-02T10:25:43.940185"
+    },
+    {
+      "path": "examples\\sample_config.json",
+      "size": 869,
+      "hash": "ca7e43f76b12cbfb1d3e04abc6b5d931",
+      "modified": "2025-07-02T10:25:43.938202"
+    },
+    {
+      "path": "examples\\textures\\sample_sword.png",
+      "size": 74,
+      "hash": "524fde151dc9f911a28d46e17dc05997",
+      "modified": "2025-07-02T10:25:43.939184"
+    },
+    {
+      "path": "templates\\basic_template.json",
+      "size": 240,
+      "hash": "c3bbdacbd4e34f373bba53392e3aa08d",
+      "modified": "2025-07-02T10:25:43.939184"
+    },
+    {
+      "path": "templates\\magic_template.json",
+      "size": 234,
+      "hash": "124b1032ead20e299dbea7079f2d93c8",
+      "modified": "2025-07-02T10:25:43.939184"
+    },
+    {
+      "path": "templates\\weapon_template.json",
+      "size": 234,
+      "hash": "e9e2103446ef38fd98bde86dd3244734",
+      "modified": "2025-07-02T10:25:43.940185"
+    }
+  ]
+}

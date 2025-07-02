@@ -1,0 +1,96 @@
+{
+  "package_info": {
+    "name": "Minecraft Pack Generator",
+    "version": "1.0.0",
+    "author": "けんすけ",
+    "description": "MinecraftのResourcePackとDataPackを自動生成するツール",
+    "license": "MIT",
+    "homepage": "",
+    "repository": "",
+    "keywords": ["minecraft", "datapack", "resourcepack", "generator", "automation"],
+    "created_date": "2025-01-27",
+    "last_updated": "2025-01-27"
+  },
+  "requirements": {
+    "python_version": ">=3.7",
+    "operating_system": ["Windows 10", "Windows 11"],
+    "dependencies": [
+      "colorama>=0.4.4",
+      "tqdm>=4.64.0",
+      "pyinstaller>=5.0.0"
+    ]
+  },
+  "features": [
+    "カスタムアイテムの生成",
+    "カスタムスペルの生成",
+    "カスタムエンティティの生成",
+    "レシピの生成",
+    "アドバンスメントの生成",
+    "ルートテーブルの生成",
+    "カスタム関数の生成",
+    "テンプレート機能",
+    "設定検証機能",
+    "プレビュー機能",
+    "ログ機能",
+    "進捗表示",
+    "exeファイル生成"
+  ],
+  "distribution": {
+    "package_name": "MinecraftPackGenerator_v1.0.0",
+    "installer": "install.bat",
+    "main_program": "pack_generator.py",
+    "config_file": "packdata.json",
+    "documentation": [
+      "docs/INSTALL_GUIDE.txt",
+      "docs/USAGE_GUIDE.txt"
+    ],
+    "examples": [
+      "examples/sample_config.json",
+      "examples/textures/"
+    ],
+    "templates": [
+      "templates/basic_template.json",
+      "templates/magic_template.json",
+      "templates/weapon_template.json"
+    ]
+  },
+  "build_info": {
+    "build_script": "build_exe.py",
+    "build_batch": "build_exe.bat",
+    "output_exe": "dist/MinecraftPackGenerator.exe",
+    "pyinstaller_options": [
+      "--onefile",
+      "--windowed",
+      "--name=MinecraftPackGenerator",
+      "--add-data=packdata.json;."
+    ]
+  },
+  "installation": {
+    "quick_start": "quick_start.bat",
+    "dependencies_installer": "install_dependencies.bat",
+    "python_installer": "install_dependencies.py",
+    "setup_script": "setup.py"
+  },
+  "changelog": {
+    "1.0.0": [
+      "初回リリース",
+      "基本的なパック生成機能",
+      "カスタムアイテム・スペル・エンティティ生成",
+      "レシピ・アドバンスメント・ルートテーブル生成",
+      "カスタム関数生成",
+      "テンプレート機能",
+      "設定検証機能",
+      "プレビュー機能",
+      "ログ機能",
+      "進捗表示",
+      "exeファイル生成",
+      "配布パッケージ作成"
+    ]
+  },
+  "support": {
+    "log_file": "pack_generator.log",
+    "error_reporting": "pack_generator.log",
+    "documentation": "docs/",
+    "examples": "examples/"
+  }
+} 

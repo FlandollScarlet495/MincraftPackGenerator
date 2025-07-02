@@ -1,0 +1,27 @@
+# Minecraft Pack Generator v1.0.0 - チェックサム
+
+ファイル: MinecraftPackGenerator_v1.0.0_20250702.zip
+生成日時: 2025-07-02 10:25:44
+
+MD5: e60621a2cd910c4768b3df1011ad3145
+SHA256: e66a8f857b7215e9fde7492449d42655bbac4faca6c6d674764c2df9fb0d4602
+
+## 使用方法
+
+### Windows (PowerShell)
+```powershell
+Get-FileHash -Algorithm MD5 "MinecraftPackGenerator_v1.0.0_20250702.zip"
+Get-FileHash -Algorithm SHA256 "MinecraftPackGenerator_v1.0.0_20250702.zip"
+```
+
+### Windows (コマンドプロンプト)
+```cmd
+certutil -hashfile "MinecraftPackGenerator_v1.0.0_20250702.zip" MD5
+certutil -hashfile "MinecraftPackGenerator_v1.0.0_20250702.zip" SHA256
+```
+
+### Linux/Mac
+```bash
+md5sum "MinecraftPackGenerator_v1.0.0_20250702.zip"
+sha256sum "MinecraftPackGenerator_v1.0.0_20250702.zip"
+```
