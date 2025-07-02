@@ -1,0 +1,73 @@
+# Minecraft Pack Generator v1.1.0 - チェックサム
+
+生成日時: 2025-07-02 12:02:11
+バージョン: 1.1.0
+
+## 📦 配布パッケージ
+
+### MinecraftPackGenerator-Python_v1.1.0_20250702_nogui.zip
+サイズ: 12.3 KB
+MD5: 0078b420326255fbec79e1452b163271
+SHA256: 01eeac0b1a1608270d7ec495a8194fc811dc6cd0aeb3e58ad0ad251ab2a12aee
+
+### MinecraftPackGenerator-Python_v1.1.0_20250702_with_gui.zip
+サイズ: 18.1 KB
+MD5: 88780d946cf6283c853a5ff45c75e794
+SHA256: a13a890a044894a33378733ce4b0cc1431fe50484ddb5e0bb8d5df1407edaec7
+
+### MinecraftPackGenerator_v1.0.0_20250702.zip
+サイズ: 27.7 KB
+MD5: a855235bb786f5688ff03f8acbf8d8ba
+SHA256: 2b8f005230f87b67ca95ccb0db370bf1d9942f10b653ef16350e25cf0626d52c
+
+
+## 📊 統計情報
+
+- ファイル数: 3個
+- 合計サイズ: 58.0 KB
+- 生成日時: 2025-07-02 12:02:11
+
+## 🔍 使用方法
+
+### Windows (PowerShell)
+```powershell
+# MD5チェックサムを確認
+Get-FileHash -Algorithm MD5 "ファイル名.zip"
+
+# SHA256チェックサムを確認  
+Get-FileHash -Algorithm SHA256 "ファイル名.zip"
+```
+
+### Windows (コマンドプロンプト)
+```cmd
+# MD5チェックサムを確認
+certutil -hashfile "ファイル名.zip" MD5
+
+# SHA256チェックサムを確認
+certutil -hashfile "ファイル名.zip" SHA256
+```
+
+### Linux/Mac
+```bash
+# MD5チェックサムを確認
+md5sum "ファイル名.zip"
+
+# SHA256チェックサムを確認
+sha256sum "ファイル名.zip"
+```
+
+## ✅ 検証方法
+
+1. ダウンロードしたZIPファイルのチェックサムを計算
+2. 上記の値と比較
+3. 一致すればファイルが正常にダウンロードされています
+
+## 🛡️ セキュリティ
+
+- チェックサムはファイルの整合性を確認するために使用されます
+- ダウンロード中にファイルが破損していないかチェックできます
+- 改ざんされていないことを確認できます
+
+---
+作成日: 2025-07-02 12:02:11
+バージョン: 1.1.0

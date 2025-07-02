@@ -1,0 +1,281 @@
+{
+  "pack_info": {
+    "name": "ふらんちゃんの魔法パック",
+    "version": "1.0.0",
+    "author": "けんすけ",
+    "description": "東方Projectのフランドール・スカーレットをテーマにした魔法とアイテムのパック"
+  },
+  "items": [
+    {
+      "id": "magic_sword",
+      "name": "フランドールの剣",
+      "damage": 15,
+      "durability": 1000,
+      "enchantments": ["sharpness", "fire_aspect"],
+      "texture": "textures/items/magic_sword.png",
+      "lore": "フランドールが愛用する魔法の剣",
+      "rarity": "epic"
+    },
+    {
+      "id": "destruction_eye",
+      "name": "破壊の目",
+      "damage": 25,
+      "durability": 500,
+      "enchantments": ["unbreaking", "efficiency"],
+      "texture": "textures/items/destruction_eye.png",
+      "lore": "全てを破壊する力を持つ神秘的な目",
+      "rarity": "legendary"
+    },
+    {
+      "id": "flandre_wings",
+      "name": "フランドールの翼",
+      "damage": 0,
+      "durability": 2000,
+      "enchantments": ["feather_falling", "unbreaking"],
+      "texture": "textures/items/flandre_wings.png",
+      "lore": "空を飛ぶことができる魔法の翼",
+      "rarity": "epic"
+    },
+    {
+      "id": "magic_staff",
+      "name": "魔法の杖",
+      "damage": 8,
+      "durability": 800,
+      "enchantments": ["power", "infinity"],
+      "texture": "textures/items/magic_staff.png",
+      "lore": "様々な魔法を操る杖",
+      "rarity": "rare"
+    }
+  ],
+  "spells": [
+    {
+      "id": "flandre_burst",
+      "name": "フレイムバースト",
+      "description": "周囲の敵に炎のダメージを与える",
+      "commands": [
+        "say フレイムバースト発動！",
+        "execute as @e[distance=..8,type=!player] run damage @s 15",
+        "particle minecraft:flame ~ ~1 ~ 1 1 1 0 20 force",
+        "playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1"
+      ],
+      "cooldown": 20,
+      "mana_cost": 50,
+      "range": 8
+    },
+    {
+      "id": "destruction_ray",
+      "name": "破壊光線",
+      "description": "直線上のブロックを破壊する",
+      "commands": [
+        "say 破壊光線発動！",
+        "execute positioned ~ ~ ~ run fill ~ ~ ~ ~10 ~ ~ air destroy",
+        "particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0 50 force",
+        "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 2"
+      ],
+      "cooldown": 30,
+      "mana_cost": 75,
+      "range": 10
+    },
+    {
+      "id": "time_stop",
+      "name": "時間停止",
+      "description": "周囲の時間を一時的に止める",
+      "commands": [
+        "say 時間停止！",
+        "effect give @e[distance=..15,type=!player] minecraft:slowness 5 255",
+        "effect give @e[distance=..15,type=!player] minecraft:jump_boost 5 128",
+        "particle minecraft:portal ~ ~1 ~ 2 2 2 0 100 force",
+        "playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.5"
+      ],
+      "cooldown": 60,
+      "mana_cost": 100,
+      "range": 15
+    },
+    {
+      "id": "healing_wave",
+      "name": "癒しの波",
+      "description": "周囲の味方を回復させる",
+      "commands": [
+        "say 癒しの波発動！",
+        "effect give @a[distance=..10] minecraft:instant_health 1 1",
+        "effect give @a[distance=..10] minecraft:regeneration 10 1",
+        "particle minecraft:heart ~ ~1 ~ 1 1 1 0 30 force",
+        "playsound minecraft:entity.player.levelup player @a ~ ~ ~ 1 1"
+      ],
+      "cooldown": 45,
+      "mana_cost": 60,
+      "range": 10
+    },
+    {
+      "id": "teleport_spell",
+      "name": "瞬間移動",
+      "description": "指定した方向に瞬間移動する",
+      "commands": [
+        "say 瞬間移動！",
+        "execute positioned ~ ~ ~ run tp @s ~5 ~ ~",
+        "particle minecraft:portal ~ ~1 ~ 0.5 0.5 0.5 0 20 force",
+        "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1"
+      ],
+      "cooldown": 15,
+      "mana_cost": 30,
+      "range": 5
+    }
+  ],
+  "entities": [
+    {
+      "id": "flandre_familiar",
+      "name": "フランドールの使い魔",
+      "health": 50,
+      "damage": 8,
+      "speed": 0.3,
+      "texture": "textures/entity/flandre_familiar.png",
+      "behavior": "friendly",
+      "abilities": ["fire_immunity", "flight"]
+    },
+    {
+      "id": "destruction_golem",
+      "name": "破壊ゴーレム",
+      "health": 100,
+      "damage": 15,
+      "speed": 0.2,
+      "texture": "textures/entity/destruction_golem.png",
+      "behavior": "aggressive",
+      "abilities": ["block_breaking", "fire_resistance"]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "magic_sword_recipe",
+      "name": "フランドールの剣のレシピ",
+      "type": "shaped",
+      "pattern": [
+        " D ",
+        " D ",
+        " S "
+      ],
+      "ingredients": {
+        "D": "minecraft:diamond",
+        "S": "minecraft:stick"
+      },
+      "result": {
+        "item": "magic_sword",
+        "count": 1
+      }
+    },
+    {
+      "id": "destruction_eye_recipe",
+      "name": "破壊の目のレシピ",
+      "type": "shaped",
+      "pattern": [
+        " E ",
+        "EOE",
+        " E "
+      ],
+      "ingredients": {
+        "E": "minecraft:ender_eye",
+        "O": "minecraft:obsidian"
+      },
+      "result": {
+        "item": "destruction_eye",
+        "count": 1
+      }
+    },
+    {
+      "id": "magic_staff_recipe",
+      "name": "魔法の杖のレシピ",
+      "type": "shaped",
+      "pattern": [
+        " G ",
+        " G ",
+        " S "
+      ],
+      "ingredients": {
+        "G": "minecraft:gold_ingot",
+        "S": "minecraft:stick"
+      },
+      "result": {
+        "item": "magic_staff",
+        "count": 1
+      }
+    }
+  ],
+  "advancements": [
+    {
+      "id": "first_spell",
+      "name": "初めての魔法",
+      "description": "最初のスペルを習得する",
+      "criteria": {
+        "cast_spell": {
+          "trigger": "minecraft:impossible"
+        }
+      },
+      "rewards": {
+        "experience": 100
+      }
+    },
+    {
+      "id": "master_mage",
+      "name": "魔法使いマスター",
+      "description": "全てのスペルを習得する",
+      "criteria": {
+        "all_spells": {
+          "trigger": "minecraft:impossible"
+        }
+      },
+      "rewards": {
+        "experience": 1000,
+        "loot": ["magic_staff"]
+      }
+    }
+  ],
+  "loot_tables": [
+    {
+      "id": "magic_chest",
+      "name": "魔法の宝箱",
+      "pools": [
+        {
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "item",
+              "name": "magic_sword",
+              "weight": 30
+            },
+            {
+              "type": "item",
+              "name": "magic_staff",
+              "weight": 40
+            },
+            {
+              "type": "item",
+              "name": "minecraft:experience_bottle",
+              "weight": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "id": "init_game",
+      "name": "ゲーム初期化",
+      "description": "ゲーム開始時の初期化処理",
+      "commands": [
+        "scoreboard objectives add mana dummy \"マナ\"",
+        "scoreboard objectives add level dummy \"レベル\"",
+        "scoreboard objectives add experience dummy \"経験値\"",
+        "tellraw @a {\"text\":\"ふらんちゃんの魔法パックが読み込まれました！\",\"color\":\"green\"}"
+      ]
+    },
+    {
+      "id": "mana_regeneration",
+      "name": "マナ回復",
+      "description": "マナの自動回復処理",
+      "commands": [
+        "execute as @a run scoreboard players add @s mana 1",
+        "execute as @a[score={mana=100..}] run scoreboard players set @s mana 100"
+      ]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import subprocess
 import sys
 from pathlib import Path
 from datetime import datetime
+import argparse
 
 def create_directory_structure():
     """配布用のディレクトリ構造を作成"""
@@ -461,7 +462,10 @@ def create_zip_package(dist_dir):
     return zip_name
 
 def main():
-    """メイン処理"""
+    parser = argparse.ArgumentParser(description='配布パッケージ作成ツール')
+    parser.add_argument('--with-gui', action='store_true', help='GUI版も同梱する')
+    args = parser.parse_args()
+
     print("🎮 Minecraft Pack Generator - 配布パッケージ作成ツール")
     print("=" * 60)
     print()
@@ -488,7 +492,14 @@ def main():
     create_readme(dist_dir)
     
     # ZIPパッケージ作成
-    zip_name = create_zip_package(dist_dir)
+    if args.with_gui:
+        # gui_generator.pyを同梱
+        shutil.copy('gui_generator.py', os.path.join(dist_dir, 'gui_generator.py'))
+        zip_name = f"MinecraftPackGenerator_v{datetime.now().strftime('%Y%m%d')}_with_gui.zip"
+    else:
+        # gui_generator.pyを除外
+        zip_name = f"MinecraftPackGenerator_v{datetime.now().strftime('%Y%m%d')}_nogui.zip"
+    create_zip_package(dist_dir)
     
     print()
     print("🎉 配布パッケージの作成が完了しました！")

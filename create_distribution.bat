@@ -20,7 +20,10 @@ echo ✅ Pythonが確認されました
 echo.
 
 echo 🚀 配布パッケージ作成スクリプトを実行中...
+REM 通常版
 python create_distribution.py
+REM GUI同梱版
+python create_distribution.py --with-gui
 if %errorlevel% neq 0 (
     echo ❌ 配布パッケージの作成に失敗しました
     pause

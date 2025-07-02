@@ -175,4 +175,4 @@ build_exe.bat
 
 **Minecraft Pack Generator v1.0.0** - Minecraftのパック作成を簡単に！
 
-生成日時: 2025-07-02 10:40:04
+生成日時: 2025-07-02 12:07:21
