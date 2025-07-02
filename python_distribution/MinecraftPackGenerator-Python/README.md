@@ -1,20 +1,19 @@
-# Minecraft Pack Generator
+# Minecraft Pack Generator - Python版
 
-MinecraftのResourcePackとDataPackを自動生成するツールです。
-
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+MinecraftのResourcePackとDataPackを自動生成するPythonツールです。
 
 ## 🚀 クイックスタート
 
 ### 1. ダウンロード
-[Releases](https://github.com/FlandollScarlet495/MincraftPackGenerator/releases) から最新版をダウンロード
+[Releases](https://github.com/FlandollScarlet495/MincraftPackGenerator/releases) からPython版をダウンロード
 
 ### 2. インストール
 ```bash
-# ZIPファイルを展開
-# install.bat をダブルクリック
+# 依存関係のインストール
+pip install -r requirements.txt
+
+# セットアップ（オプション）
+python setup.py install
 ```
 
 ### 3. 使用開始
@@ -34,8 +33,7 @@ python pack_generator.py
 - ✅ テンプレート機能
 - ✅ 設定検証機能
 - ✅ プレビュー機能
-- ✅ exeファイル生成
-- ✅ 配布パッケージ作成
+- ✅ クロスプラットフォーム対応
 
 ## 🎮 使用方法
 
@@ -59,11 +57,6 @@ python pack_generator.py --validate
 python pack_generator.py --preview
 ```
 
-### exeファイル作成
-```bash
-build_exe.bat
-```
-
 ## 📁 生成されるファイル
 
 - `datapack.zip` - データパック
@@ -73,21 +66,18 @@ build_exe.bat
 
 ## 🛠️ 必要な環境
 
-- Windows 10/11
 - Python 3.7以上
+- 対応OS: Windows, macOS, Linux
 
 ## 📦 インストール
 
-### 自動インストール（推奨）
-1. `install.bat` をダブルクリック
-2. 画面の指示に従ってセットアップ
-
-### 手動インストール
+### 依存関係のインストール
 ```bash
-# 依存関係のインストール
 pip install -r requirements.txt
+```
 
-# セットアップ
+### セットアップ（オプション）
+```bash
 python setup.py install
 ```
 
@@ -149,8 +139,8 @@ python setup.py install
 ### 環境構築
 ```bash
 # リポジトリをクローン
-git clone https://github.com/yourusername/minecraft-pack-generator.git
-cd minecraft-pack-generator
+git clone https://github.com/FlandollScarlet495/MincraftPackGenerator.git
+cd MincraftPackGenerator
 
 # 依存関係をインストール
 pip install -r requirements.txt
@@ -165,23 +155,14 @@ python pack_generator.py --preview
 python pack_generator.py --validate
 ```
 
-### 配布パッケージ作成
-```bash
-# 完全配布パッケージ作成
-complete_distribution.bat
-```
-
 ## 📊 プロジェクト構造
 
 ```
-minecraft-pack-generator/
+MinecraftPackGenerator-Python/
 ├── pack_generator.py          # メインプログラム
 ├── packdata.json             # 設定ファイル
 ├── requirements.txt          # 依存関係
 ├── setup.py                 # セットアップスクリプト
-├── build_exe.py             # exeビルドスクリプト
-├── create_distribution.py   # 配布パッケージ作成
-├── distribution_checker.py  # 品質チェック
 ├── examples/                # サンプルファイル
 ├── templates/               # テンプレート
 ├── docs/                    # ドキュメント
@@ -204,7 +185,7 @@ minecraft-pack-generator/
 
 **けんすけ**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@FlandollScarlet495](https://github.com/FlandollScarlet495)
 
 ## 🙏 謝辞
 
@@ -216,7 +197,7 @@ minecraft-pack-generator/
 
 問題が発生した場合は：
 
-1. [Issues](https://github.com/yourusername/minecraft-pack-generator/issues) で報告
+1. [Issues](https://github.com/FlandollScarlet495/MincraftPackGenerator/issues) で報告
 2. `pack_generator.log` を確認
 3. [ドキュメント](docs/) を参照
 
@@ -224,6 +205,25 @@ minecraft-pack-generator/
 
 このプロジェクトが役に立ったら、⭐ を押してください！
 
+## 🔄 プラットフォーム対応
+
+### Windows
+```bash
+python pack_generator.py
+```
+
+### macOS
+```bash
+python3 pack_generator.py
+```
+
+### Linux
+```bash
+python3 pack_generator.py
+```
+
 ---
 
-**Minecraft Pack Generator** - Minecraftのパック作成を簡単に！ 
+**Minecraft Pack Generator - Python版** - クロスプラットフォーム対応！
+
+作成日: 2025年07月02日

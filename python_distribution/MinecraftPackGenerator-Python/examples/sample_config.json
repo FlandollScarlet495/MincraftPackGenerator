@@ -1,0 +1,36 @@
+{
+  "pack_info": {
+    "name": "サンプルパック",
+    "version": "1.0.0",
+    "author": "ユーザー名",
+    "description": "サンプルパックの説明"
+  },
+  "items": [
+    {
+      "id": "sample_sword",
+      "name": "サンプル剣",
+      "damage": 10,
+      "durability": 1000,
+      "enchantments": [
+        "sharpness"
+      ],
+      "texture": "textures/items/sample_sword.png",
+      "lore": "サンプルアイテム",
+      "rarity": "common"
+    }
+  ],
+  "spells": [
+    {
+      "id": "sample_spell",
+      "name": "サンプルスペル",
+      "description": "サンプルスペルの説明",
+      "commands": [
+        "say サンプルスペル発動！",
+        "particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0 10 force"
+      ],
+      "cooldown": 10,
+      "mana_cost": 20,
+      "range": 5
+    }
+  ]
+}

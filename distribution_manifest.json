@@ -1,5 +1,5 @@
 {
-  "created_date": "2025-07-02T10:40:04.599076",
+  "created_date": "2025-07-02T10:46:08.984481",
   "files": [
     {
       "path": "build_exe.bat",
@@ -17,7 +17,7 @@
       "path": "install.bat",
       "size": 2765,
       "hash": "cbba4113c9b5052a8f85c45a5fde3884",
-      "modified": "2025-07-02T10:40:04.469076"
+      "modified": "2025-07-02T10:46:08.886482"
     },
     {
       "path": "install_dependencies.bat",
@@ -53,7 +53,7 @@
       "path": "README.txt",
       "size": 1724,
       "hash": "369c02737ca03209830d573fd10d4418",
-      "modified": "2025-07-02T10:40:04.470077"
+      "modified": "2025-07-02T10:46:08.886482"
     },
     {
       "path": "requirements.txt",
@@ -71,43 +71,43 @@
       "path": "docs\\INSTALL_GUIDE.txt",
       "size": 948,
       "hash": "4e1eee651c52c312104a2d69fb153459",
-      "modified": "2025-07-02T10:40:04.468086"
+      "modified": "2025-07-02T10:46:08.885483"
     },
     {
       "path": "docs\\USAGE_GUIDE.txt",
       "size": 909,
       "hash": "fc427681f1d8c94d742066d95868ed6e",
-      "modified": "2025-07-02T10:40:04.469076"
+      "modified": "2025-07-02T10:46:08.886482"
     },
     {
       "path": "examples\\sample_config.json",
       "size": 869,
       "hash": "ca7e43f76b12cbfb1d3e04abc6b5d931",
-      "modified": "2025-07-02T10:40:04.466084"
+      "modified": "2025-07-02T10:46:08.884488"
     },
     {
       "path": "examples\\textures\\sample_sword.png",
       "size": 74,
       "hash": "524fde151dc9f911a28d46e17dc05997",
-      "modified": "2025-07-02T10:40:04.466084"
+      "modified": "2025-07-02T10:46:08.884488"
     },
     {
       "path": "templates\\basic_template.json",
       "size": 240,
       "hash": "c3bbdacbd4e34f373bba53392e3aa08d",
-      "modified": "2025-07-02T10:40:04.467085"
+      "modified": "2025-07-02T10:46:08.884488"
     },
     {
       "path": "templates\\magic_template.json",
       "size": 234,
       "hash": "124b1032ead20e299dbea7079f2d93c8",
-      "modified": "2025-07-02T10:40:04.467085"
+      "modified": "2025-07-02T10:46:08.885483"
     },
     {
       "path": "templates\\weapon_template.json",
       "size": 234,
       "hash": "e9e2103446ef38fd98bde86dd3244734",
-      "modified": "2025-07-02T10:40:04.468086"
+      "modified": "2025-07-02T10:46:08.885483"
     }
   ]
 }

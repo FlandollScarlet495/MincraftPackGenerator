@@ -1,0 +1,42 @@
+# Minecraft Pack Generator - 使用方法ガイド
+
+## 基本的な使用方法
+
+### 1. 設定ファイルの作成
+`packdata.json` を編集して、カスタムアイテムやスペルを追加します。
+
+### 2. パックの生成
+```bash
+python pack_generator.py
+```
+
+### 3. 生成されたファイル
+- `datapack.zip` - データパック
+- `resourcepack.zip` - リソースパック
+- `output/` - 展開されたファイル
+
+## 設定ファイルの構造
+
+### pack_info
+パックの基本情報を設定します。
+
+### items
+カスタムアイテムを定義します。
+
+### spells
+カスタムスペルを定義します。
+
+## テンプレートの使用
+```bash
+python pack_generator.py --template my_pack
+```
+
+## 設定の検証
+```bash
+python pack_generator.py --validate
+```
+
+## プレビュー表示
+```bash
+python pack_generator.py --preview
+```

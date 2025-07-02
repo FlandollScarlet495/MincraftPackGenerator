@@ -1,0 +1,28 @@
+# Minecraft Pack Generator - インストールガイド
+
+## 必要な環境
+- Windows 10/11
+- Python 3.7以上
+
+## インストール手順
+
+### 1. クイックスタート（推奨）
+1. `quick_start.bat` をダブルクリック
+2. 画面の指示に従ってセットアップ
+
+### 2. 手動インストール
+1. `install_dependencies.bat` を実行
+2. `python pack_generator.py --preview` でテスト
+
+### 3. exeファイル作成
+1. `build_exe.bat` を実行
+2. `dist/MinecraftPackGenerator.exe` が作成されます
+
+## 使用方法
+- `python pack_generator.py` - 基本的なパック生成
+- `python pack_generator.py --template my_pack` - テンプレート作成
+- `python pack_generator.py --validate` - 設定検証
+- `python pack_generator.py --preview` - プレビュー表示
+
+## トラブルシューティング
+エラーが発生した場合は、`pack_generator.log` を確認してください。
